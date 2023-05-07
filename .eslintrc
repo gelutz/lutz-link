@@ -1,0 +1,49 @@
+{
+	"env": {
+		"es2020": true,
+		"node": true,
+		"browser": true,
+		"es6": true
+	},
+	"extends": [
+		"standard",
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+	  "project": "tsconfig.json",
+	  "sourceType": "module",
+	  "ecmaVersion": 2020
+	},
+	"plugins": [
+		"@typescript-eslint"
+	],
+	"ignorePatterns": [
+		"*.json"
+	],
+	"rules": {
+		"semi": ["error", "never"],
+		"indent": ["error", "tab"],
+		"quotes": [
+			"error",
+			"single"
+		],
+		"comma-dangle": "off",
+		"space-before-function-paren": "off",
+		"no-use-before-define": "off",
+		"@typescript-eslint/no-use-before-define": [
+			"error"
+		],
+		"@typescript-eslint/explicit-function-return-type": "warn",
+		"max-len": [
+		  "error",
+		  {
+			"code": 105,
+			"ignoreStrings": true,
+			"ignoreTemplateLiterals": true
+		  }
+		]	
+	}
+}
