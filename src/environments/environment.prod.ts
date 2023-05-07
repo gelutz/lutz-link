@@ -1,4 +1,4 @@
 export const environment = {
 	production: true,
-	apiUrl: "https://lutz-link-api.vercel.app/"
+	apiUrl: "https://is.gd/create.php"
 }

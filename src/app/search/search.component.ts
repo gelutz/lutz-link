@@ -14,19 +14,18 @@ export class SearchComponent {
   constructor(private http: HttpClient) {}
 
   enshort() {
-    this.search(this.input).then(response => {
+    this.search(this.input).then(result => {
       if (!this.input) {
         return
       }
-      this.shortened = response.url
+      this.shortened = result
     })
   }
 
-  async search(link: string): Promise<{url: string}> {
+  async search(link: string): Promise<string> {
     return new Promise((resolve, reject) => {
-      console.log(link)
-      this.http.post<{url: string}>(environment.apiUrl, {link: link}).subscribe({
-        next: resolve,
+      this.http.get<{shorturl: string}>(`${environment.apiUrl}?format=json&url=${link}`).subscribe({
+        next: (response) => resolve(response.shorturl),
         error: reject
       })
     })
