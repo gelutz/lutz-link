@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"path": "app/api",
+			"name": "api"
+		},
+		{
+			"path": "app/client",
+			"name": "client"
+		},
+		{
+			"path": ".git",
+			"name": ""
+		},
+		{
+			"path": ".",
+			"name": "configuration"
+		},
+	],
+	"settings": {}
+}
