@@ -11,14 +11,13 @@
   </button>
 </form>
 <div
-  class="w-14rem align-content-center text-white flex flex-column text-center p-0"
+  class="w-100 align-content-center text-white flex flex-column text-center p-0"
 >
   <span>
     <p>{{ input }}</p>
   </span>
   <p class="pi pi-chevron-down" [style]="{ color: 'white' }"></p>
-  <span *ngIf="shortened" class="border-green-300 border-2 p-1 w-14rem">
+  <span *ngIf="shortened" class="border-green-300 border-2 p-1">
     <p>{{ shortened }}</p>
-    <!-- <p>www.google.com</p> -->
   </span>
 </div>
