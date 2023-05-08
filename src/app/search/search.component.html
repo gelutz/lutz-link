@@ -15,8 +15,8 @@
     <p>{{ input }}</p>
   </span>
   <p class="pi pi-chevron-down" [style]="{ color: 'white' }"></p>
-  <span class="border-green-300 border-2 p-1 w-14rem">
-    <!-- <p>{{ shortened }}</p> -->
-    <p>www.google.com</p>
+  <span *ngIf="shortened" class="border-green-300 border-2 p-1 w-14rem">
+    <p>{{ shortened }}</p>
+    <!-- <p>www.google.com</p> -->
   </span>
 </div>
