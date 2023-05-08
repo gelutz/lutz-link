@@ -1,5 +1,22 @@
-<form>
-  <input type="text" pInputText name="input" [(ngModel)]="input"/>
-  <button pButton type="button" (click)="enshort()">Checar</button>
+<form class="flex flex-column">
+  <input id="url" type="text" pInputText name="input" [(ngModel)]="input" />
+  <button
+    id="send"
+    class="justify-content-center font-bold text-200 h-2rem w-14"
+    (click)="enshort()"
+    pButton
+    type="button"
+  >
+    Encurtar
+  </button>
 </form>
-{{input}} -> {{shortened}}
+<div class="align-content-center text-white flex flex-column text-center p-0">
+  <span>
+    <p>{{ input }}</p>
+  </span>
+  <p class="pi pi-chevron-down" [style]="{ color: 'white' }"></p>
+  <span class="border-green-300 border-2 p-1 w-14rem">
+    <!-- <p>{{ shortened }}</p> -->
+    <p>www.google.com</p>
+  </span>
+</div>

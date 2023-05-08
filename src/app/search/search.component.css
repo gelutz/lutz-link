@@ -1,0 +1,26 @@
+
+#url {
+	width: 70vw;
+	margin-bottom: 2em;
+	height: 2em;
+	padding: .3em;
+	font-size: larger;
+	border-radius: .3em;
+	background-color: var(--purple-900);
+	color: #f1f1f1;
+	box-shadow: var(--blue-500) 0px 1px 2px 0px, var(--green-400) 0px 2px 6px 2px;
+}
+
+#url:hover {
+	border-color: var(--green-400);
+}
+
+#send {
+	height: 4em;
+	box-shadow: var(--blue-500) 0px 1px 2px 0px, var(--green-400) 0px 2px 6px 2px;
+	border-radius: .3em;
+}
+
+#send:active {
+	box-shadow: #32325d40 0px 30px 60px -12px inset, #0000004d 0px 18px 36px -18px inset;
+}

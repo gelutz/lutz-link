@@ -1,0 +1,21 @@
+main {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	background-color: #22083b;
+}
+
+#center {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+}
+
+#center div {
+	display: flex;
+	flex-direction: column;
+	justify-content: end;
+	height: 40em;
+}
